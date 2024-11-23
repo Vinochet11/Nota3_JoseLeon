@@ -3,11 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="/assets/js/Promesas.js"></script>
+    <link rel="stylesheet" href="/assets/style/style.css">
     <title>Document</title>
 </head>
+<header>
+    <nav>
+        <a href="/Registrar">Registrar</a>
+        <a href="Logear">inicia sesion</a>
+        <a href="/Cual_funcion">Cual es nuestra funcion</a>
+        <a href="/Toma_Hora">Toma tu hora</a>
+        <button type="button" id="C_Color">Cambiar Color</button>
+        <button type="button" id="C_Letra">Cambiar Letra</button>    
+    </nav>
+    <br>
+    <br><div class="linea1"></div><br>
+</header>
 <body>
-    <form >
-        <input type="text" placeholder="Nombre">
-    </form>
+    <form>
+        <input type="text" placeholder="Nombre" id="Nombre"><br>
+        <input type="text" placeholder="Apellido" id="Apellido"><br>
+        <input type="number" placeholder="Rut" id="Rut"><br> 
+        <input type="text" placeholder="Ciudad Nacimiento" id="Nciudad">
+        <p>Estado civil</p>
+        <input type="radio" name="Estado" id="Casado" value="Casado">Soltero
+        <br>
+        <input type="radio" name="Estado" id="Soltero" value="Soltero">Casado<br><br>
+        <p>genero</p>
+        <select id="Genero">
+            <option>Masculino</option>
+            <option>Femenino</option>
+        </select><br><br>
+        <p>Ingresa tu Direccion</p>
+        <textarea id="Direccion" placeholder="Direccion"></textarea><br>
+        <button type="button" id="btnRegistrar">Registrar</button>
+    </form><br>
+    <button type="button" id="btnEliminar">Boton Eliminar</button><br>
+    
+    <br><div class="linea1"></div><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Rut</th>
+                <th>Ciudad De Nacimiento</th>
+                <th>Estado Matrimonial</th>
+                <th>Genero</th>
+                <th>Direccion</th>  
+            </tr>
+        </thead>
+        <tbody id="CuerpoTabla">
+
+        </tbody>
+    </table>
+
+    <div id="formEditar" style="display: none;">
+        <h3>Editar Usuario</h3>
+        <form id="formEdicion">
+            <input type="text" id="editNombre" placeholder="Nombre"><br>
+            <input type="text" id="editApellido" placeholder="Apellido"><br>
+            <input type="number" id="editRut" placeholder="Rut"><br>
+            <input type="text" id="editCiudad" placeholder="Ciudad de Nacimiento"><br>
+            <p>Estado Civil:</p>
+            <input type="radio" id="editSoltero" name="editEstadoCivil" value="Soltero"> Soltero<br>
+            <input type="radio" id="editCasado" name="editEstadoCivil" value="Casado"> Casado<br>
+            <select id="editGenero">
+                <option>Masculino</option>
+                <option>Femenino</option>
+            </select><br>
+            <textarea id="editDireccion" placeholder="Dirección"></textarea><br>
+            <button type="button" id="btnGuardarCambios">Guardar Cambios</button>
+            <button type="button" id="btnCancelarEdicion">Cancelar</button>
+        </form>
+    </div>
+
+
 </body>
+<footer>
+    <a href="https://www.instagram.com/registrocivil_chile/"><img src="/assets/img/images.png" alt="registrocivil_chile" style="width: 140px; margin: 80px;"></a>
+</footer>
+
+<script type="module" src="/assets/js/script.js"></script>
 </html>

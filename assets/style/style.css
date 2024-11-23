@@ -1,0 +1,21 @@
+html{
+    text-align: center;
+    background-color: white; 
+    color: black;
+}
+h1 {
+    
+    text-align: center;
+}
+#nav{
+    background-color: aqua;
+}
+
+
+.linea1{
+    width: 5%;
+    
+    border: solid 1px red;
+    margin: auto;
+}
+
